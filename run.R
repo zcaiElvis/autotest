@@ -23,7 +23,7 @@ for (i in 1:length(data)) {
     ### Save case output ###
     if (gen_plot) {
       mod <- summary(result)
-      png(filename=paste0("log/", current_time, "/img_", i, j, ".png"), width=900, height=450)
+      png(filename=paste0("log/", current_time, "/img_", i, j, ".png"), width=1200, height=450)
       plot(mod)
       dev.off()
     }

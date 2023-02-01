@@ -41,14 +41,14 @@ if (reload) {
   data_mpox <- list(observed_counts = data_mpox[,1])
 }
 
-data <- list(data_short)
+data <- list(data_canada)
 
 ### Set parameters
 
 # Multiple Lambda
 p4 <- list(dist_gamma = c(2.5, 2.5),
            degree = 2,
-           lambda = exp(seq(0.1, 5, 0.1)),
+           lambda = exp(seq(1, 8, 0.4)),
            fold = 4)
 
 params <- list(p4)
